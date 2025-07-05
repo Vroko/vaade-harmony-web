@@ -35,7 +35,7 @@ export default function ViewShare({ album, shareId, error }: ViewShareProps) {
   }
 
   const shareUrl = `https://harmony.vaade.co/view/${shareId}`
-  const title = `${album.albumName} by ${album.albumArtists.join(", ")} - VAADE Harmony`
+  const title = `${album.albumName} by ${album.albumArtists.join(", ")} - sharedBy ${album.sharedByUsername} - VAADE Harmony`
   const description = `${album.sharedByUsername}'s ranking of ${album.albumName} on VAADE Harmony`
 
   return (
